@@ -1,0 +1,300 @@
+*{
+    padding:0;
+    margin:0;
+    //box-sizing: border-box;
+
+}
+
+html,
+body{
+    padding:0;
+    margin:0;
+    background-color:#343d46; 
+    height:100%;
+    width=device-width;
+    overflow: hidden;
+}
+body{
+	
+	min-height: 100%;
+	margin:0 auto;
+}
+main{
+	padding:0;
+	margin:0;
+	width:100%;
+	//background-color:blue;
+	height:65vh;
+    //min-height:440px;
+
+}
+.wrapper{
+	max-width:1024px;
+	//background-color:green;
+
+	/* height:100%; */
+	
+	margin: 0 auto;
+}
+header{
+    padding:1vh;
+    height: 8vh;
+}
+.search{
+    font-size: 18px;
+	width: 70%;
+    border-radius:8px;
+	display: block;
+	margin: auto;
+	padding: 6px 14px;
+    border: none;
+    outline: none;
+    height: 8vh;
+    max-height: 20px;
+    
+}
+.videos{
+	display: block;
+	width: 200vw;
+    height:60vh;
+    //min-height:420px;
+	position: absolute;
+	left: 0px;
+    padding-top:10px;
+
+	/*-webkit-transition: left 1s, background-color 2s;*/
+	/*transition: left 1s;*/
+}
+
+.videos:hover{
+	/*left:-1920px;*/
+	//background-color: #FFCCCC;
+}
+
+.media-element{
+    border-radius:8px;
+    box-sizing: border-box;
+    display: block;
+    float:left;
+    width: 20vw;
+   //min-height:420px;
+    height: 60vh;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-right: 5vw;
+    user-select: none;
+    padding: 20px;
+}
+.media-element a{
+    display:block;
+    /* z-index: 100; */
+}
+.media-element:first-child{
+	margin-left: 2.5vw;
+}
+/*.media-element:nth-child(4n){
+	margin-right:0;
+}*/
+.media-element img{
+	border-radius:8px;
+	width: 100%;
+}
+.media-element p{
+	//margin:1px;
+    display:block;
+    line-height: 20px;
+    width:100%;
+    
+    overflow:hidden;
+}
+
+
+p{
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    color:#c51109;
+}
+a:hover{
+    text-decoration:underline;
+    transform:scale(1.01);
+}   
+p::before{
+    font-size:18px;
+    font-family: "FontAwesome";
+    padding-right:10px;
+    width:20px;
+    display: inline-block;
+    color:#343d46;
+}
+p.title{
+    height: 40px;  
+}
+p.uploader-name{
+    height: 20px;
+    margin:0 auto;
+}
+p.uploader-name::before{
+    content: "\f007";
+    
+}
+
+p.date-uploaded{
+    height: 20px;
+}
+p.date-uploaded::before{
+    content: "\f073";
+    
+}
+
+
+p.views{
+    height: 20px;
+}
+p.views::before{
+    content: "\f06e";
+    
+}
+
+p.description{
+    height: 80px;
+}
+p.description::before{
+
+}
+
+
+ul.paging{
+	display:block;
+	margin:0 auto;
+	text-align: center;
+}
+
+li.page{
+	//
+	background-color:yellow;
+	padding:1px;
+	user-select: none;
+	background-color: #fff;
+	border-radius: 15%;
+	/*width:30px;*/
+	min-width:16px;
+    padding:2px 2px;
+	display:inline-block;
+	margin-right:5px;
+}
+
+.page:last-child{
+	background-color:#fff;
+	border-radius: 15% 50% 50% 15%;
+    color:#fff;
+    padding-right:5px;
+    margin-right: 0;
+}
+.page:first-child{
+	background-color:white;
+	border-radius: 50% 15% 15% 50%;
+    color:#fff;
+    padding-left:5px;
+
+}
+.page.current-page{
+    background-color: #c51109;
+    /* height: 22px; */
+    vertical-align: bottom;
+    /* line-height: 28px; */
+    /* display: table-cell; */
+}
+
+.page.current-page:first-child{
+    border-radius: 15%;
+    color:black;
+    padding-left:2px;
+}
+
+.page:hover{
+    background-color:#e62117;
+}
+
+
+li.page:hover{
+	cursor:pointer;
+}
+
+
+@media (max-width: 1440px) {
+    .media-element{
+		
+		width: 29vw;
+		margin-right: 4.33vw;
+	}
+	.media-element:first-child{
+		margin-left: 2.17vw;
+	}
+}
+
+@media (max-width: 1024px) {
+    .media-element{
+		
+		width: 46vw;
+		margin-right: 4vw;
+	}
+	.media-element:first-child{
+		margin-left: 2vw;
+	}
+}
+
+@media (max-width: 600px) {
+    .media-element{
+		
+		width: 90vw;
+		margin-right:10vw;
+	}
+	.media-element:first-child{
+		margin-left: 5vw;
+	}
+}
+
+@media (max-width: 500px) {
+    .media-element{
+		
+		width: 95vw;
+		margin-right: 5vw;
+	}
+	.media-element:first-child{
+		margin-left: 2.5vw;
+	}
+}
+
+@media (max-height: 600px) {
+    .media-element{
+        height:75vh;
+    }
+    main{
+        height:80vh;
+    }
+    .wrapper,.serach, header{
+        height:10vh;
+    }
+    
+       
+}
+
+@media (max-height: 400px) {
+    p.uploader-name{
+        display: none;
+    }
+    
+    p.date-uploaded{
+        display: none;
+    }
+    
+    p.views{
+        display: none;
+    }
+    p.description{
+        display: none;
+    } 
+}
